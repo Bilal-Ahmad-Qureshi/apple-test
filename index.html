@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+      }
+
+      .main-div {
+        position: relative;
+      }
+      .upper-bar {
+        position: fixed;
+        left: 100px;
+      }
+      #apple-logo {
+        position: absolute;
+        left: 10%;
+        width: 30px;
+        top: 5px;
+      }
+      .upper-bar-names h5 {
+        display: inline-block;
+        margin: 10px;
+        font-weight: normal;
+        position: relative;
+        left: 20%;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      #searchBar-logo {
+        width: 80px;
+        position: absolute;
+        left: 125%;
+        bottom: 8px;
+      }
+      .first-div {
+        width: 100%;
+        height: 570px;
+        background-color: grey;
+        position: absolute;
+        top: 45px;
+      }
+      .image-first-div {
+        width: 100%;
+      }
+      .first-div-h-one {
+        position: absolute;
+        left: 45%;
+        top: 20px;
+        color: white;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+      }
+
+      .first-div-ipadPic {
+        position: absolute;
+        left: 700px;
+        width: 100px;
+        top: 12px;
+        margin-left: 27px;
+      }
+      .color-blue-one {
+        position: absolute;
+        width: 220px;
+        left: 550px;
+        border-radius: 20px;
+        height: 130px;
+        top: 30px;
+      }
+      .color-blue-two {
+        position: absolute;
+        height: 30px;
+        width: 229px;
+        left: 550px;
+        top: 180px;
+        border-radius: 20px;
+      }
+      .first-div > h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 555px;
+        top: 165px;
+        color: white;
+      }
+      .color-blue-three {
+        position: absolute;
+        width: 220px;
+        left: 550px;
+        border-radius: 30px;
+        height: 180px;
+        top: 230px;
+      }
+      .first-div-Choose {
+        color: black;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 575px;
+        top: 225px;
+        color: white;
+      }
+      .first-div h6 {
+        position: absolute;
+        color: black;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        left: 732px;
+        top: 338px;
+        color: white;
+      }
+      .emoji {
+        position: absolute;
+        left: 525px;
+        width: 50px;
+        top: 212px;
+      }
+      .edge-one {
+        position: absolute;
+        left: 753px;
+        top: 387px;
+        width: 30px;
+      }
+      .edge-two {
+        position: absolute;
+        left: 768px;
+        top: 200px;
+        width: 15px;
+      }
+      .first-div-shop > h4 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        top: 420px;
+        left: 50%;
+      }
+      .second-div {
+        width: 100%;
+        height: 590px;
+        position: absolute;
+        top: 570px;
+        background-color: rgb(249, 243, 243);
+        margin-top: 20px;
+      }
+      .second-div > h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        position: absolute;
+        top: 10px;
+        left: 45%;
+      }
+      .second-div h2 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        position: absolute;
+        top: 100px;
+        left: 40%;
+      }
+      .second-div-LearnMore h4 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        top: 150px;
+        left: 40%;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+      }
+      .second-div-ShopiPhone h4 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        top: 150px;
+        left: 51%;
+      }
+      .second-div-Built h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        top: 220px;
+        left: 41%;
+        font-size: 22px;
+        font-weight: normal;
+      }
+      #iphone-photo {
+        width: 50%;
+        object-fit: cover;
+        height: 300px;
+        position: absolute;
+        left: 27%;
+        top: 300px;
+      }
+      .third-div {
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: 1140px;
+        background-color: black;
+        margin-top: 20px;
+        padding-bottom: 0%;
+      }
+      .third-div > h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        position: absolute;
+        top: 10px;
+        left: 43%;
+        color: white;
+      }
+      .third-div h2 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        position: absolute;
+        top: 100px;
+        left: 35%;
+        color: white;
+      }
+      .third-div-LearnMore h4 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        top: 150px;
+        left: 40%;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+      }
+      .third-div-Buy h4 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        top: 150px;
+        left: 51%;
+        color: rgb(0, 113, 227);
+      }
+      #iPad-Photo {
+        position: absolute;
+        top: 220px;
+        left: 17%;
+        object-fit: cover;
+      }
+      .third-div-Built h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        top: 420px;
+        left: 41%;
+        font-size: 22px;
+        font-weight: normal;
+        padding-bottom: 0%;
+      }
+      .parent-div {
+        position: absolute;
+        height: 1200px;
+        width: 100%;
+        top: 1720px;
+        background-color: white;
+      }
+      .one {
+        width: 50%;
+        height: 350px;
+        background-color: rgb(236, 243, 254);
+        position: absolute;
+      }
+      .one > h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+      }
+      .one h3 {
+        font-weight: normal;
+        text-align: center;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+      }
+      .sub-div-one {
+        position: absolute;
+        left: 28%;
+        bottom: 230px;
+      }
+      .laptop {
+        width: 50%;
+        height: 150px;
+        position: absolute;
+        left: 23%;
+        top: 150px;
+      }
+      .sub-div-one-LearnMore > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 30%;
+        top: 90px;
+      }
+      .sub-div-one-Buy > h5 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        left: 50%;
+        top: 90px;
+      }
+      .sub-div-one-Built > h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        font-size: 12px;
+        font-weight: normal;
+        padding-bottom: 0%;
+        left: 38%;
+        top: 300px;
+      }
+      .two {
+        width: 50%;
+        height: 350px;
+        background-color: rgb(201, 242, 253);
+        position: absolute;
+        left: 50%;
+      }
+      .two > h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        left: 38%;
+      }
+      .air-logo {
+        position: absolute;
+        width: 50px;
+        left: 50%;
+        top: 21px;
+      }
+      .two h3 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        left: 25%;
+        top: 40px;
+      }
+      .two-LearnMore > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 30%;
+        top: 70px;
+      }
+      .two-Buy > h5 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        left: 50%;
+        top: 70px;
+      }
+      .iPad-Air {
+        width: 60%;
+        height: 190px;
+        position: absolute;
+        left: 20%;
+        top: 130px;
+      }
+      .two-Built > h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        font-size: 12px;
+        font-weight: normal;
+        padding-bottom: 0%;
+        left: 38%;
+        top: 310px;
+      }
+      .three {
+        width: 50%;
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        top: 350px;
+      }
+      .three > h1 {
+        position: absolute;
+        left: 45%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .appleLogo-three {
+        width: 40px;
+        position: absolute;
+        left: 38%;
+        top: 5px;
+      }
+      .three h4 {
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        left: 45%;
+        top: 40px;
+      }
+      .three h2 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        font-weight: normal;
+        left: 37%;
+        top: 60px;
+      }
+      .three-LearnMore > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 35%;
+        top: 90px;
+      }
+      .three-Buy > h5 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        left: 55%;
+        top: 90px;
+      }
+      .AppleWatch-three {
+        width: 450px;
+        position: absolute;
+        top: 150px;
+        height: 200px;
+        left: 15%;
+      }
+      .four {
+        width: 50%;
+        height: 350px;
+        background-color: black;
+        position: absolute;
+        top: 350px;
+        left: 50%;
+      }
+      .girl-photo {
+        width: 30%;
+        height: 200px;
+        position: absolute;
+        left: 34%;
+      }
+      .four h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 32%;
+        top: 180px;
+      }
+      .four h3 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 29%;
+        top: 220px;
+        font-weight: normal;
+      }
+      .four h6 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 441px;
+        top: 210px;
+      }
+      .four-LearnMore > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 32%;
+        top: 250px;
+      }
+      .four-Buy > h5 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        left: 53%;
+        top: 250px;
+      }
+      .five {
+        width: 50%;
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        top: 700px;
+      }
+      .five > h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 45%;
+        top: 2px;
+      }
+      .five-AppleLogo {
+        width: 35px;
+        position: absolute;
+        left: 39%;
+        top: 15px;
+      }
+      .five h2 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+      }
+      .first-line {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 22%;
+        top: 40px;
+        font-weight: normal;
+      }
+      .second-line {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 25%;
+        top: 70px;
+        font-weight: normal;
+      }
+      .five h6 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        top: 68px;
+        left: 73%;
+      }
+      .five-get > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 40%;
+        top: 105px;
+      }
+      .five-exchangePhotos {
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        top: 170px;
+      }
+      .six {
+        width: 50%;
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        top: 700px;
+        left: 50%;
+      }
+      .six-AppleLogo {
+        width: 35px;
+        position: absolute;
+        left: 39%;
+        top: 15px;
+      }
+      .six h1 {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 45%;
+        top: 2px;
+      }
+      .six-FirstLine {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 22%;
+        top: 40px;
+        font-weight: normal;
+      }
+      .six-SecondLine {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 70px;
+        font-weight: normal;
+      }
+      .six-LearnMore > h5 {
+        font-weight: normal;
+        background-color: rgb(0, 113, 227);
+        position: absolute;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        color: white;
+        left: 30%;
+        top: 105px;
+      }
+      .six-Buy > h5 {
+        font-weight: normal;
+        position: absolute;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        border: 1px solid rgb(0, 113, 227);
+        border-radius: 20px;
+        color: rgb(0, 113, 227);
+        padding: 8px 22px;
+        left: 50%;
+        top: 105px;
+      }
+      .card-image {
+        position: absolute;
+        width: 250px;
+        height: 180px;
+        left: 30%;
+        top: 170px;
+      }
+      .movies {
+        position: absolute;
+        top: 2780px;
+        background-color: aqua;
+        width: 100%;
+        height: 350px;
+      }
+      .movies-photo {
+        width: 100%;
+      }
+      .points {
+        position: absolute;
+        top: 3320px;
+        left: 40%;
+        width: 50%;
+      }
+      .points > img {
+        width: 30%;
+      }
+      .slides {
+        position: absolute;
+        top: 3350px;
+        background-color: white;
+        width: 100%;
+      }
+      .slides > img {
+        height: 250px;
+        width: 100%;
+      }
+      .grey-color {
+        position: absolute;
+        top: 3610px;
+        background-color: aqua;
+        height: 550px;
+        width: 100%;
+      }
+      .grey-color > img {
+        width: 100%;
+      }
+      .grey-color .p-one {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 480px;
+        text-align: justify;
+      }
+      .grey-color .p-two {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 420px;
+        text-align: justify;
+      }
+      .grey-color .p-three {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 360px;
+        text-align: justify;
+      }
+      .grey-color .p-four {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 280px;
+        text-align: justify;
+      }
+      .grey-color .p-five {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 240px;
+        text-align: justify;
+      }
+      .grey-color .p-six {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 190px;
+        text-align: justify;
+      }
+      .grey-color .p-seven {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 160px;
+        text-align: justify;
+      }
+      .grey-color .p-eight {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 130px;
+        text-align: justify;
+      }
+      .grey-color .p-nine {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 70px;
+        text-align: justify;
+      }
+      .grey-color .p-ten {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 40px;
+        text-align: justify;
+      }
+      .grey-color .p-eleven {
+        color: rgba(0, 0, 0, 0.56);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 10px;
+        text-align: justify;
+      }
+      .line {
+        position: absolute;
+        top: 540px;
+        right: 0%;
+        width: 10%;
+      }
+      .grey-color-div-two {
+        position: absolute;
+        top: 4180px;
+        height: 550px;
+        width: 100%;
+      }
+      .grey-color-div-two > img {
+        width: 100%;
+      }
+      .shop {
+        position: absolute;
+        top: 4170px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 120px;
+      }
+      .-one {
+        color: rgba(0, 0, 0, 0.72);
+        font-weight: bold;
+      }
+      .Account {
+        position: absolute;
+        top: 4170px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 330px;
+      }
+      .Apple-Store {
+        position: absolute;
+        top: 4170px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 570px;
+      }
+      .Business {
+        position: absolute;
+        top: 4170px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 800px;
+      }
+      .values {
+        position: absolute;
+        top: 4170px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 1020px;
+      }
+      .wallet {
+        position: absolute;
+        top: 4500px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 120px;
+      }
+      .Entertainment {
+        position: absolute;
+        top: 4280px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 330px;
+      }
+
+      .Education {
+        position: absolute;
+        top: 4260px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 800px;
+      }
+      .HealthCare {
+        position: absolute;
+        top: 4380px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 800px;
+      }
+      .forGovernment {
+        position: absolute;
+        top: 4520px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 800px;
+      }
+      .About {
+        position: absolute;
+        top: 4390px;
+        margin: 0px;
+        padding: 0%;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.72);
+        left: 1020px;
+      }
+      .moreWays {
+        position: absolute;
+        top: 4660px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.72);
+        left: 120px;
+      }
+      .line-last {
+        position: absolute;
+        top: 4700px;
+        width: 100%;
+      }
+      .footer-one {
+        position: absolute;
+        top: 4720px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.72);
+        left: 120px;
+      }
+      .footer-second {
+        position: absolute;
+        top: 4720px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.72);
+        left: 420px;
+        text-align: justify;
+      }
+      .footer-third {
+        position: absolute;
+        top: 4720px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.72);
+        right: 100px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="upper-bar">
+        <img src="./Upper Bar Images/Apple Logo.png" id="apple-logo" />
+        <div class="upper-bar-names">
+          <h5>Store</h5>
+          <h5>Mac</h5>
+          <h5>iPad</h5>
+          <h5>iPhone</h5>
+
+          <a href=""></a>
+          <button></button>
+
+          <h5>Watch</h5>
+          <h5>Vision</h5>
+          <h5>AirPods</h5>
+          <h5>TV & Home</h5>
+          <h5>Entertainment</h5>
+          <h5>Accessories</h5>
+          <h5>Support</h5>
+        </div>
+        <img src="./Upper Bar Images/Search Bar logo.png" id="searchBar-logo" />
+      </div>
+
+      <div class="first-div">
+        <img src="./edge.png" class="edge-one" />
+        <img src="./edge.png" class="edge-two" />
+        <img src="./color-blue.png" class="color-blue-one" />
+        <img src="./color-blue.png" class="color-blue-two" />
+        <img src="./color-blue.png" class="color-blue-three" />
+        <h3>with education savings</h3>
+        <h1 class="first-div-h-one">
+          Buy Mac<br />
+          or iPad<br />
+          for College
+        </h1>
+
+        <div class="bg-cont" style="position: relative; width: auto; padding: 20px;">
+          <div class="heading-cont" style="max-width: 12rem">
+            <h1>Choose airpods or an eligible accessory</h1>
+          </div>
+          <div class="image-cont" style="position: absolute; top: -20%;">
+            <img src="emoji.png" style="width: 50px; height: 50px;" alt="">
+          </div>
+        </div>
+
+        <h1 class="first-div-Choose">
+          Choose<br />
+          AirPods or<br />
+          an eligible<br />
+          accessory
+        </h1>
+        <h6>1</h6>
+        <img src="./ipads picture.png" class="first-div-ipadPic" />
+        <img src="./Airpods Pic.png" class="image-first-div" />
+        <img src="./emoji.png" class="emoji" />
+        <div class="first-div-shop">
+          <h4>Shop</h4>
+        </div>
+      </div>
+
+      <div class="second-div">
+        <h1>iPhone</h1>
+        <h2>Meet the iPhone 16 family.</h2>
+        <div class="second-div-LearnMore">
+          <h4>Learn More</h4>
+        </div>
+        <div class="second-div-ShopiPhone">
+          <h4>Shop iPhone</h4>
+        </div>
+        <div class="second-div-Built">
+          <h3>
+            <span style="color: rgb(0, 102, 204)">Built</span>
+            <span style="color: rgb(91, 161, 231)">for</span>
+            <span style="color: rgb(198, 100, 197)">Apple</span>
+            <span style="color: orangered">Intelligence</span>
+          </h3>
+        </div>
+        <img src="./iPhones photos.png" id="iphone-photo" />
+      </div>
+
+      <div class="third-div">
+        <h1>iPad Pro</h1>
+        <h2>Unbelievably thin.Incredibly powerful.</h2>
+        <div class="third-div-LearnMore">
+          <h4>Learn More</h4>
+        </div>
+        <div class="third-div-Buy">
+          <h4>Buy</h4>
+        </div>
+        <img src="./iPad photo.png" id="iPad-Photo" />
+        <div class="third-div-Built">
+          <h3>
+            <span style="color: rgb(0, 102, 204)">Built</span>
+            <span style="color: rgb(91, 161, 231)">for</span>
+            <span style="color: rgb(198, 100, 197)">Apple</span>
+            <span style="color: orangered">Intelligence</span>
+          </h3>
+        </div>
+      </div>
+
+      <div class="parent-div">
+        <div class="one">
+          <h1>MacBook Air</h1>
+          <div class="sub-div-one">
+            <h3>Sky blue color.<br />Sky high performance with M4</h3>
+          </div>
+          <div class="sub-div-one-LearnMore">
+            <h5>Learn More</h5>
+          </div>
+          <div class="sub-div-one-Buy">
+            <h5>Buy</h5>
+          </div>
+          <img src="./Parent div pics/laptop.png" class="laptop" />
+          <div class="sub-div-one-Built">
+            <h3>
+              <span style="color: rgb(0, 102, 204)">Built</span>
+              <span style="color: rgb(91, 161, 231)">for</span>
+              <span style="color: rgb(198, 100, 197)">Apple</span>
+              <span style="color: orangered">Intelligence</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="two">
+          <h1>iPad</h1>
+          <img src="./Parent div pics/air logo.png" class="air-logo" />
+          <h3>Now supercharged by the M3 chip.</h3>
+          <div class="two-LearnMore">
+            <h5>Learn More</h5>
+          </div>
+          <div class="two-Buy">
+            <h5>Buy</h5>
+          </div>
+          <img src="./iPad Air picture.png" class="iPad-Air" />
+          <div class="two-Built">
+            <h3>
+              <span style="color: rgb(0, 102, 204)">Built</span>
+              <span style="color: rgb(91, 161, 231)">for</span>
+              <span style="color: rgb(198, 100, 197)">Apple</span>
+              <span style="color: orangered">Intelligence</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="three">
+          <h1>WATCH</h1>
+          <img
+            src="./Parent div pics/apple wala logo.png"
+            class="appleLogo-three"
+          />
+          <h4>Series 10</h4>
+          <h2>Thinstant classic.</h2>
+          <div class="three-LearnMore">
+            <h5>Learn More</h5>
+          </div>
+          <div class="three-Buy">
+            <h5>Buy</h5>
+          </div>
+          <img src="./Apple watch .png" class="AppleWatch-three" />
+        </div>
+
+        <div class="four">
+          <img src="./girl photo.png" class="girl-photo" />
+          <h1 style="color: white">AirPods Pro 2</h1>
+          <h3 style="color: white">Now with a Hearing Aid feature.</h3>
+          <h6 style="color: white">2</h6>
+          <div class="four-LearnMore">
+            <h5>Learn More</h5>
+          </div>
+          <div class="four-Buy">
+            <h5>Buy</h5>
+          </div>
+        </div>
+
+        <div class="five">
+          <img
+            src="./Parent div pics/apple wala logo.png"
+            class="five-AppleLogo"
+          />
+          <h1>Trade In</h1>
+          <h2 class="first-line">Get $100-$600 in credit when you</h2>
+          <h2 class="second-line">trade in iPhone 12 or higher.</h2>
+          <h6>3</h6>
+          <div class="five-get">
+            <h5>Get your estimate</h5>
+          </div>
+          <img
+            src="./Parent div pics/exchange phots.png"
+            class="five-exchangePhotos"
+          />
+        </div>
+
+        <div class="six">
+          <img
+            src="./Parent div pics/apple wala logo.png"
+            class="six-AppleLogo"
+          />
+          <h1>Card</h1>
+          <h2 class="six-FirstLine">Get upto 3% Daily Cash back</h2>
+          <h2 class="six-SecondLine">with every purchase.</h2>
+          <div class="six-LearnMore">
+            <h5>Learn More</h5>
+          </div>
+          <div class="six-Buy">
+            <h5>Buy</h5>
+          </div>
+          <img src="./card image.png" class="card-image" />
+        </div>
+      </div>
+
+      <div class="movies">
+        <img src="./tiger photo.png" class="movies-photo" />
+      </div>
+
+      <div class="points">
+        <img src="./points.png" />
+      </div>
+
+      <div class="slides">
+        <img src="./slides.png" class="slidesPhoto" />
+      </div>
+
+      <div class="grey-color">
+        <img src="./color.png" class="grey-color-div" />
+        <p class="p-one">
+          1. Available for Qualified Purchasers only. Qualified Purchasers
+          purchasing an eligible Mac/iPad (“Eligible Product”) with eligible
+          AirPods/accessory (“Promotion Product”) from a Qualifying Location
+          through September 30, 2025 will receive Promotion Savings (up to $199,
+          not to exceed the price of the Promotion Product). Customers will be
+          charged for all items in their cart, including the Promotion Product.
+          Only one Promotion Product per Eligible Product per Qualified
+          Purchaser. Offer subject to availability. While supplies last.
+          Additional restrictions apply. View full offer terms
+          <span style="color: black">here.</span>
+        </p>
+        <p class="p-two">
+          2. Hearing Aid and Hearing Test: The Hearing Aid feature has received
+          FDA authorization. The Hearing Test and Hearing Aid features are
+          supported on AirPods Pro 2 with the latest firmware paired with a
+          compatible iPhone or iPad with iOS 18 or iPadOS 18 and later and are
+          intended for people 18 years old or older. The Hearing Aid feature is
+          also supported on a compatible Mac with macOS Sequoia and later. It is
+          intended for people with perceived mild to moderate hearing loss.
+        </p>
+        <p class="p-three">
+          Hearing Protection: The Hearing Protection feature works with AirPods
+          Pro 2 with the latest firmware when paired with a compatible iPhone,
+          iPad, or Mac with iOS 18, iPadOS 18, or macOS Sequoia and later.
+          Feature is only available in the U.S. and Canada. See
+          support.apple.com/120850 for total attenuation and more information.
+          The Hearing Protection feature is not suitable for protection against
+          extremely loud impulse sounds, such as gunfire, fireworks, or
+          jackhammers, or against sustained sounds louder than 110 dBA.
+        </p>
+        <p class="p-four">
+          3. Trade‑in values will vary based on the condition, year, and
+          configuration of your eligible trade‑in device. Not all devices are
+          eligible for credit. You must be at least the age of majority to be
+          eligible to trade in for credit or for an Apple Gift Card. Trade‑in
+          value may be applied toward qualifying new device purchase, or added
+          to an Apple Gift Card. Actual value awarded is based on receipt of a
+          qualifying device matching the description provided when estimate was
+          made. Sales tax may be assessed on full value of a new device
+          purchase. In‑store trade‑in requires presentation of a valid photo ID
+          (local law may require saving this information). Offer may not be
+          available in all stores, and may vary between in‑store and online
+          trade‑in. Some stores may have additional requirements. Apple or its
+          trade‑in partners reserve the right to refuse, cancel, or limit
+          quantity of any trade‑in transaction for any reason. More details are
+          available from Apple’s trade-in partner for trade‑in and recycling of
+          eligible devices. Restrictions and limitations may apply.
+        </p>
+        <p class="p-five">
+          To access and use all Apple Card features and products available only
+          to Apple Card users, you must add Apple Card to Wallet on an iPhone or
+          iPad that supports and has the latest version of iOS or iPadOS. Apple
+          Card is subject to credit approval, available only for qualifying
+          applicants in the United States, and issued by Goldman Sachs Bank USA,
+          Salt Lake City Branch.
+        </p>
+        <p class="p-six">
+          Apple Payments Services LLC, a subsidiary of Apple Inc., is a service
+          provider of Goldman Sachs Bank USA for Apple Card and Savings
+          accounts. Neither Apple Inc. nor <br />
+          Apple Payments Services LLC is a bank.
+        </p>
+        <p class="p-seven">
+          If you reside in the U.S. territories, please call Goldman Sachs at
+          877-255-5923 with questions about Apple Card.
+        </p>
+        <p class="p-eight">
+          Learn more about how Apple Card applications are evaluated at
+          <span style="color: black">support.apple.com/kb/HT209218.</span>
+        </p>
+        <p class="p-nine">
+          Apple Intelligence is available in beta on all iPhone 16 models,
+          iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and
+          Mac models with M1 and later, with Siri and device language set to the
+          same supported language, as part of an iOS 18, iPadOS 18, and macOS
+          Sequoia software update. Supported languages include English, French,
+          German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean, and
+          Chinese (Simplified). More languages are coming over the course of the
+          year, including Vietnamese. Some features may not be available in all
+          regions or languages.
+        </p>
+        <p class="p-ten">
+          A subscription is required for Apple Arcade, Apple Fitness+, Apple
+          Music, and Apple TV+.
+        </p>
+        <p class="p-eleven">
+          Features are subject to change. Some features, applications, and
+          services may not be available in all regions or all languages.
+        </p>
+        <img src="./line.png" class="line" />
+      </div>
+
+      <div class="grey-color-two">
+        <img src="./color.png" class="grey-color-div-two" />
+        <div class="shop">
+          <p class="-one">Shop and Learn</p>
+          <p></p>
+          <p>Store</p>
+          <p></p>
+          <p>Mac</p>
+          <p></p>
+          <p>iPad</p>
+          <p></p>
+          <p>iPhone</p>
+          <p></p>
+          <p>Watch</p>
+          <p></p>
+          <p>Vision</p>
+          <p></p>
+          <p>AirPods</p>
+          <p></p>
+          <p>TV & Home</p>
+          <p></p>
+          <p>AirTag</p>
+          <p></p>
+          <p>Accessories</p>
+          <p></p>
+          <p>Gift Cards</p>
+          <p></p>
+        </div>
+
+        <div class="wallet">
+          <p class="-one">Apple Wallet</p>
+          <p>Wallet</p>
+          <p>Apple Card</p>
+          <p>Apple Pay</p>
+          <p>Apple Cash</p>
+        </div>
+
+        <div class="Account">
+          <p class="-one">Account</p>
+          <p>Manage Your Apple Account</p>
+          <p>Apple Store Account</p>
+          <p>iCloud.com</p>
+        </div>
+
+        <div class="Entertainment">
+          <p class="-one">Entertainment</p>
+          <p>Apple One</p>
+          <p>Apple TV+</p>
+          <p>Apple Music</p>
+          <p>Apple Arcade</p>
+          <p>Apple Fitness+</p>
+          <p>Apple News+</p>
+          <p>Apple Podcasts</p>
+          <p>Apple Books</p>
+          <p>App Store</p>
+        </div>
+
+        <div class="Apple-Store">
+          <p class="-one">Apple Store</p>
+          <p>Find a Store</p>
+          <p>Genius Bar</p>
+          <p>Today at Apple</p>
+          <p>Group Reservations</p>
+          <p>Apple Camp</p>
+          <p>Apple Store App</p>
+          <p>Certified Refurbished</p>
+          <p>Apple Trade In</p>
+          <p>Financing</p>
+          <p>Career Deals at Apple</p>
+          <p>Order Status</p>
+          <p>Shopping Help</p>
+        </div>
+
+        <div class="Business">
+          <p class="-one">For Business</p>
+          <p>Apple and Business</p>
+          <p>Shop for Business</p>
+        </div>
+
+        <div class="Education">
+          <p class="-one">For Education</p>
+          <p>Apple and Education</p>
+          <p>Shop for K-12</p>
+          <p>Shop for College</p>
+        </div>
+
+        <div class="HealthCare">
+          <p class="-one">For Healthcare</p>
+          <p>Mac in HealthCare</p>
+          <p>Health on Apple Watch</p>
+          <p>Health Records on iPhone and<br />iPad</p>
+        </div>
+
+        <div class="forGovernment">
+          <p class="-one">For Government</p>
+          <p>Shop for Government</p>
+          <p>Shop for Veterans and Military</p>
+        </div>
+
+        <div class="values">
+          <p class="-one">Apple Values</p>
+          <p>Accessibility</p>
+          <p>Education</p>
+          <p>Environment</p>
+          <p>Inclusion and Diversity</p>
+          <p>Privacy</p>
+          <p>Racial Equity and Justice</p>
+          <p>Supply Chain Innovation</p>
+        </div>
+
+        <div class="About">
+          <p class="-one">About Apple</p>
+          <p>Newsroom</p>
+          <p>Apple Leadership</p>
+          <p>Career Opportunities</p>
+          <p>Investors</p>
+          <p>Ethics and Compliance</p>
+          <p>Events</p>
+          <p>Contact Apple</p>
+        </div>
+        <p class="moreWays">
+          More ways to shop:
+          <span style="color: rgb(0, 102, 204)">Find an Apple Store</span> or
+          <span style="color: rgb(0, 102, 204)">other retailer</span> near you.
+          Or call
+          <span style="color: rgb(0, 102, 204)">1-800-MY-APPLE</span>
+          (1-800-692-7753).
+        </p>
+
+        <img src="./line.png" class="line-last" />
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-one">Copyright © 2025 Apple Inc. All rights reserved.</p>
+      <p class="footer-second">
+        Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map
+      </p>
+      <p class="footer-third">United States</p>
+    </footer>
+  </body>
+</html>
